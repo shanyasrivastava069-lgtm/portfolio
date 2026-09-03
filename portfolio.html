@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shanya- Developer Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+         </head>
+         <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+          body{
+            background-color: rgba(0,0,13);
+            color:white;
+            font-family: 'Poppins', sans-serif;
+           
+          }
+          nav{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            height: 80px;
+            background-color:rgb(18, 18, 62);
+          }
+          nav ul{
+             display:flex;
+             justify-content:center;
+          }
+          nav ul li{
+            list-style:none;
+            margin: 0 23px;
+          }
+          nav ul li a {
+            text-decoration:none;
+            color:white;
+          }
+          nav ul li a:hover{
+            color:rgb(94, 94, 229);
+            font-size:1.04rem;
+          }
+          main hr{
+            border:0;
+            background:#9c97f1;
+            height:0.2px;
+            margin:40px 84px;
+          }
+          .left{
+            font-size:2 rem;
+          }
+          .firstSection{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            margin : 130px 0;
+            
+          }
+          .firstSection> div{
+            width:30%;
+          }
+          .leftsection{
+            font-size: 2.5rem;
+    
+          }
+          .leftsection  .buttons{
+            padding: 50px 0;
+            
+          }
+          .leftsection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color:white;
+            border:2px  solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor:pointer;
+            text-decoration:none;
+          }
+          .rightsection img{
+            width: 80%;
+      
+          }
+          .purple{
+            color:rgb(168, 93, 239)
+          }
+          #element{
+            color:rgb(168, 93, 239);
+            
+          }
+          .secondsection{
+            max-width: 80vw;
+            margin : auto;
+            height:80vh;
+          }
+          .secondsection h1{
+            font-size: 1.9rem;
+          }
+          .secondsection .box{
+            background:white;
+            width:80vw;
+            height:2px;
+            margin:56px 0;
+            display:flex;
+          }
+          .text-gray{
+            color: grey;
+          }
+            .secondsection .vertical{
+              height:93px;
+              width:1px;
+              background-color:white;
+              margin: 0 100px;
+            }
+            .image-top{
+              width:27px;
+              position:relative;
+              top:-32px;
+              left:-9px;
+            }
+            .vertical-title{
+              position:relative;
+              top:75px;
+              width:150px;
+            }
+            .vertical-desc{
+              position:relative;
+              top:86px;
+              color:gray;
+              width:150px;
+              font-size:9px;
+            }
+            footer{
+              background-color:rgb(6, 1, 34);
+            }
+            .footer{
+              display:flex;
+              padding: 23px 122px;
+              justify-content:space-evenly;
+            }
+            .footer ul{
+              list-style:none;
+            }
+            .footer > div{
+              width:123px;
+            }
+            footer .footer-rights{
+              text-align:center;
+              color:gray;
+              padding: 12px 0;
+              
+            }
+            /* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    nav {
+        height: auto;
+        min-height: 80px;
+        padding: 15px 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .firstSection > div {
+        width: 80%;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+    }
+
+    .rightsection img {
+        width: 60%;
+    }
+
+    .secondsection {
+        width: 90%;
+        max-width: none;
+        height: auto;
+    }
+
+    .secondsection .box {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        background: none;
+    }
+
+    .secondsection .vertical {
+        margin: 30px;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .left {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+
+    /* HOME SECTION */
+
+    .firstSection {
+        flex-direction: column;
+        margin: 60px 0;
+        gap: 40px;
+    }
+
+    .firstSection > div {
+        width: 90%;
+    }
+
+    .leftsection {
+        font-size: 1.7rem;
+    }
+
+    .leftsection .buttons {
+        padding: 30px 0;
+    }
+
+    .leftsection .btn {
+        font-size: 15px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .rightsection img {
+        width: 80%;
+    }
+
+
+    /* HORIZONTAL LINE */
+
+    main hr {
+        margin: 30px 20px;
+    }
+
+
+    /* EXPERIENCE SECTION */
+
+    .secondsection {
+        width: 90%;
+        max-width: none;
+        height: auto;
+    }
+
+    .secondsection h1 {
+        font-size: 1.6rem;
+    }
+
+    .secondsection .box {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        margin: 30px 0;
+    }
+
+    .secondsection .vertical {
+        width: 100%;
+        height: auto;
+        background: none;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .image-top {
+        position: static;
+        width: 40px;
+    }
+
+    .vertical-title {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .vertical-desc {
+        position: static;
+        width: 100%;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .footer > div {
+        width: auto;
+    }
+
+    footer .footer-rights {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+         </style>
+         <body>
+            <header>
+                <nav>
+                    <div class="left">Shanya's Portfolio</div>
+                    <div class="right">
+                        <ul>
+                         <li><a href="#home">Home</a></li>
+                          <li><a href="about.html">About Me</a></li>
+                          <li><a href="https://github.com/shanyasrivastava069-lgtm" target="_blank" class="btn">Projects</a></li>
+                          <li><a href="contact.html">Contact Me</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section class="firstSection">
+                    <div class="leftsection">Hi,My name is <span class="purple">Shanya</span>
+                        <div>and I am a passionate</div>
+                        <div>Web Developer</div>
+                         <span id="element"></span>
+                         <div class="buttons">
+                         <a href="Shanya_Resume.pdf" download="Shanya_Resume.pdf" class="btn">Download Resume</a>
+                        <a href="https://github.com/shanyasrivastava069-lgtm" target="_blank" class="btn">
+Visit Github</a>
+                         </div>
+                    </div>
+                    <div class="rightsection">
+                      <img src="port.jpeg" alt="Profile Image">
+                    </div>
+                </section>
+                <hr>
+              <section class="secondsection">
+                <span class="text-gray">What I have done so far</span>
+                <h1>Work Experience</h1>
+                <div class="box">
+                <div class="vertical">
+                  <img  class="image-top" src="developer.jpeg">
+                  <div class="vertical-title">Frontened Developer (2025-)</div>
+                  <div class="vertical-desc">HTML5 (Semantic markup, SEO basics, accessibility), CSS3 (Flexbox, Grid, CSS variables, responsive media queries), and JavaScript (ES6+ syntax, DOM manipulation, event handling, and array methods).
+
+                  </div>
+                </div>
+                <div class="vertical">
+                   <img  class="image-top" src="developer.jpeg">
+                   <div class="vertical-title">Node.js Developer(2026-)</div>
+                   <div class="vertical-desc">HTML5 (Semantic markup, SEO basics, accessibility), CSS3 (Flexbox, Grid, CSS variables, responsive media queries), and JavaScript (ES6+ syntax, DOM manipulation, event handling, and array methods).
+
+                  </div>
+                </div>
+                <div class="vertical">
+                   <img  class="image-top" src="developer.jpeg">
+                    <div class="vertical-title">DSA Preparing(2026-)</div>
+                   <div class="vertical-desc">HTML5 (Semantic markup, SEO basics, accessibility), CSS3 (Flexbox, Grid, CSS variables, responsive media queries), and JavaScript (ES6+ syntax, DOM manipulation, event handling, and array methods).
+
+                  </div>
+                </div>
+                <div class="vertical">
+                   <img  class="image-top" src="developer.jpeg">
+                    <div class="vertical-title">Learning Mongodb(2026-)</div>
+                   <div class="vertical-desc">HTML5 (Semantic markup, SEO basics, accessibility), CSS3 (Flexbox, Grid, CSS variables, responsive media queries), and JavaScript (ES6+ syntax, DOM manipulation, event handling, and array methods).
+
+                  </div>
+                </div>
+                 <div class="vertical">
+                   <img  class="image-top" src="developer.jpeg">
+                    <div class="vertical-title">Graphic Designer(2026-)</div>
+                   <div class="vertical-desc">HTML5 (Semantic markup, SEO basics, accessibility), CSS3 (Flexbox, Grid, CSS variables, responsive media queries), and JavaScript (ES6+ syntax, DOM manipulation, event handling, and array methods).
+
+                  </div>
+                </div>
+                 <div class="vertical">
+                   <img  class="image-top" src="developer.jpeg">
+                    <div class="vertical-title">Graphic Designer(2026-)</div>
+                   <div class="vertical-desc">HTML5 (Semantic markup, SEO basics, accessibility), CSS3 (Flexbox, Grid, CSS variables, responsive media queries), and JavaScript (ES6+ syntax, DOM manipulation, event handling, and array methods).
+
+                  </div>
+                </div>
+              
+                </div>
+                </section>
+            </main>
+            <footer>
+              <div class="footer">
+               <div class="footer-first">Shanya's Developer Portfolio</div>
+               <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+               </div>
+               <div class="footer-third">
+                 <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+               </div>
+              <div class="footer-fourth">
+                 <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+              </div>
+             </div>
+             <div class="footer-rights">
+              Copyright &#169; shanyasportfolio.com | All Rights Reserved
+             </div>
+            </footer>
+            <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+            <script>
+               var typed = new Typed('#element', {
+               strings: ['Web Developer', 'Graphic Designer', 'Video Editor','Web Designer'],
+               typeSpeed: 50,
+               });
+  </script>
+  <script src="portfolio.js"></script>
+         </body>
+         </html>
