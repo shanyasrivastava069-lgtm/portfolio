@@ -27,6 +27,16 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'portfolio.html'));
 });
 
+// Contact page
+app.get('/contact.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'contact.html'));
+});
+
+// About page
+app.get('/about.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'about.html'));
+});
+
 // Rate limiter
 const contactLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
