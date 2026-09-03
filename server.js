@@ -19,22 +19,22 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use(express.json());
 app.use(cors());
 
-// Serve portfolio files
-app.use(express.static(__dirname));
+// Serve public static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Open portfolio
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'portfolio.html'));
+    res.sendFile(path.join(__dirname, 'public', 'portfolio.html'));
 });
 
 // Contact page
 app.get('/contact.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'contact.html'));
+    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 });
 
 // About page
 app.get('/about.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'about.html'));
+    res.sendFile(path.join(__dirname, 'public', 'about.html'));
 });
 
 // Rate limiter
