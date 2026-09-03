@@ -1,0 +1,123 @@
+<!<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About- me</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+         </head>
+         <style>
+          
+        body{
+            background-color:rgb(4, 4, 45);
+        }
+.about-section {
+    padding: 80px 20px;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4872a9;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img-placeholder {
+    width: 260px;
+    height: 300px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.about-content {
+    flex: 1.5;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #4d57e3;
+}
+
+.about-tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4f46e5;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #e0eaf8;
+    margin-bottom: 25px;
+}
+
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlight-item {
+    font-size: 0.95rem;
+    color: #cdd9f0;
+}
+
+.highlight-title {
+    font-weight: 600;
+    color: rgb(74, 74, 219);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-highlights {
+        align-items: center;
+    }
+}
+            </style>
+            <body>
+<section id="about" class="about-section">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="shanya.jpeg" alt="profile-image" class="img-placeholder">
+         
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p class="about-tagline">Turning code and curiosity into engaging digital experiences.</p>
+            <p class="about-description">
+                Hello! I'm a developer and computer science student focused on building clean, responsive, and user-centric web applications. I love turning complex logic problems into elegant, intuitive digital experiences. Whether I'm structuring data or fine-tuning layouts, I care deeply about writing maintainable code and continuous learning.
+            </p>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <span class="highlight-title">Focus:</span> Frontend Development & UI Design
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-title">Stack:</span> HTML, CSS, JavaScript, C, Python
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
